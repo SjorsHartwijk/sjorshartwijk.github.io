@@ -9,79 +9,10 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--black);
   font-family: "Outfit", sans-serif;
-  color: var(--black);
+  color: var(--white);
   font-weight: 400;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--black);
-    color: var(--white);
-  }
-  body .toggle {
-    display: none;
-  }
-  body .information {
-    display: block;
-    background-color: var(--black);
-  }
-  body .list-group-item {
-    background-color: transparent;
-    color: var(--white);
-  }
-  body .card {
-    background-color: var(--darkblue);
-    border: 0px;
-    color: var(--white);
-  }
-  body .card a {
-    color: var(--purple);
-  }
-  body .card a:hover, body .card a :focus {
-    color: var(--white);
-  }
-  body .card .card-footer {
-    background-color: var(--darkblue);
-  }
-  body .profile a {
-    color: var(--white);
-  }
-  body .profile a:hover, body .profile a :focus {
-    color: var(--blue);
-  }
-}
-body.dark {
-  background-color: var(--black);
-  color: var(--white);
-}
-body.dark .information {
-  display: block;
-  background-color: var(--black);
-}
-body.dark .list-group-item {
-  background-color: transparent;
-  color: var(--white);
-}
-body.dark .card {
-  background-color: var(--darkblue);
-  border: 0px;
-  color: var(--white);
-}
-body.dark .card a {
-  color: var(--purple);
-}
-body.dark .card a:hover, body.dark .card a :focus {
-  color: var(--white);
-}
-body.dark .card .card-footer {
-  background-color: var(--darkblue);
-}
-body.dark .profile a {
-  color: var(--white);
-}
-body.dark .profile a:hover, body.dark .profile a :focus {
-  color: var(--blue);
 }
 
 .profile {
@@ -204,7 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(45deg, var(--blue) 0%, var(--purple) 100%);
   background-size: 100%;
   background-repeat: repeat;
-  background-clip: text;
-}
-
-/*# sourceMappingURL=style.css.map */
+  -webkit-background-clip: text;
+          background-clip: text;
+}/*# sourceMappingURL=style.css.map */

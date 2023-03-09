@@ -41,23 +41,10 @@
 }
 
 body {
-	background-color: var(--white);
+	background-color: var(--black);
 	font-family: 'Outfit', sans-serif;
-	color: var(--black);
+	color: var(--white);
 	font-weight: 400;
-	@media(prefers-color-scheme: dark) {
-		background-color: var(--black);
-		color: var(--white);
-		.toggle {
-			display: none;
-		}
-		@include darkmode;
-	}
-	&.dark {
-		background-color: var(--black);
-		color: var(--white);
-		@include darkmode;
-	}
 }
 .profile {
 	min-height: 70vh;
