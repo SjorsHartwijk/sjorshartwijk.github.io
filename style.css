@@ -1,17 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap");
-:root {
-  --white: #FFF;
-  --black: #080223;
-  --green: #92FE9D;
-  --blue: #4778bf;
-  --darkblue: #223992;
-  --purple: #9a00ff;
-}
-
 body {
-  background-color: var(--black);
+  background-color: #080223;
   font-family: "Outfit", sans-serif;
-  color: var(--white);
+  color: #fff;
   font-weight: 400;
 }
 
@@ -50,7 +41,7 @@ body {
   }
 }
 .profile h1 {
-  color: var(--white);
+  color: #fff;
 }
 .profile .socialmedia {
   padding-left: 0;
@@ -71,58 +62,10 @@ body {
   display: none;
 }
 .profile a {
-  color: var(--white);
+  color: #fff;
 }
 .profile a:hover, .profile a :focus {
-  color: var(--blue);
-}
-
-.card-body {
-  min-height: 140px;
-}
-
-.card-footer {
-  background-color: var(--white);
-}
-
-.badge {
-  font-size: 1em !important;
-  margin: 0.2em 0.1em !important;
-}
-
-.bg-primary {
-  background-color: #058 !important;
-}
-
-.list-group-flush {
-  padding-left: 0;
-}
-
-.toggle {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 2em;
-  padding: 10px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: var(--white);
-}
-.toggle span {
-  margin-left: 10px;
-  font-size: 0.5em;
-}
-.toggle:active i, .toggle :focus i, .toggle :hover i {
-  transform: rotate(3600deg);
-  transition-duration: 1000ms;
-}
-
-a {
-  color: #058;
-}
-a:hover, a :focus {
-  color: var(--green);
+  color: #4778bf;
 }
 
 .photo {
@@ -134,9 +77,18 @@ a:hover, a :focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700 !important;
-  color: var(--blue);
+  color: #4778bf;
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tech i {
+  font-size: 2em;
+  color: #999;
 }/*# sourceMappingURL=style.css.map */

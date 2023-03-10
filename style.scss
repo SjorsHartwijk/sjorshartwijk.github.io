@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
-:root {
-	--white: #FFF;
-	--black: #080223;
-	--green: #92FE9D;
-	--blue: #4778bf;
-	--darkblue: #223992;
-	--purple: #9a00ff;
-}
+$white: #fff;
+$black: #080223;
+$blue: #4778bf;
+$grey: #999;
 body {
-	background-color: var(--black);
+	background-color: $black;
 	font-family: 'Outfit', sans-serif;
-	color: var(--white);
+	color: $white;
 	font-weight: 400;
 }
 .profile {
@@ -41,7 +37,7 @@ body {
 		margin-bottom: 1em;
 	}
 	h1 {
-		color: var(--white);
+		color: $white;
 	}
 	.socialmedia {
 		padding-left: 0;
@@ -62,54 +58,10 @@ body {
 		}
 	}
 	a {
-		color: var(--white);
+		color: $white;
 		&:hover,:focus {
-			color: var(--blue);
+			color: $blue;
 		}
-	}
-}
-.card-body {
-	min-height: 140px;
-}
-.card-footer {
-	background-color: var(--white);
-}
-.badge {
-	font-size: 1em !important;
-	margin: 0.2em 0.1em !important;
-}
-.bg-primary {
-	background-color: #058 !important;
-}
-.list-group-flush {
-	padding-left: 0;
-}
-.toggle {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	font-size: 2em;
-	padding: 10px;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: var(--white);
-	span {
-		margin-left: 10px;
-		font-size: .5em;
-	}
-	&:active,:focus,:hover {
-		i {
-			transform: rotate(3600deg);
-			transition-duration: 1000ms;
-		}
-	}
-}
-
-a {
-	color: #058;
-	&:hover,:focus {
-		color: var(--green);
 	}
 }
 .photo {
@@ -120,8 +72,16 @@ a {
 }
 h1,h2,h3,h4,h5, h6 {
 	font-weight: 700 !important;
-	color: var(--blue);
+	color: $blue;
 	background-size: 100%;
 	background-repeat: repeat;
 	background-clip: text;
+}
+.tech {
+	display: flex;
+	justify-content: space-evenly;
+	i {
+		font-size: 2em;
+		color: $grey;
+	}
 }
