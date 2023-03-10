@@ -1,45 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
 :root {
 	--white: #FFF;
-	--black: #181123;
+	--black: #080223;
 	--green: #92FE9D;
-	--blue: #0AF;
+	--blue: #4778bf;
 	--darkblue: #223992;
 	--purple: #9a00ff;
 }
-@mixin darkmode {
-		.information {
-			display: block;
-			background-color: var(--black);
-		}
-		.list-group-item {
-			background-color: transparent;
-			color: var(--white);
-		}
-		.card {
-			background-color: var(--darkblue);
-			border: 0px;
-			color: var(--white);
-			a {
-				color: var(--purple);
-				&:hover,:focus {
-					color: var(--white);
-				}
-			}
-			.card-footer {
-				background-color: var(--darkblue);
-			}
-		}
-		.profile {
-			a {
-				color: var(--white);
-				&:hover,:focus {
-					color: var(--blue);
-				}
-			}
-		}
-}
-
 body {
 	background-color: var(--black);
 	font-family: 'Outfit', sans-serif;
@@ -72,6 +39,9 @@ body {
 			border-radius: 400px;
 		}
 		margin-bottom: 1em;
+	}
+	h1 {
+		color: var(--white);
 	}
 	.socialmedia {
 		padding-left: 0;
@@ -150,8 +120,7 @@ a {
 }
 h1,h2,h3,h4,h5, h6 {
 	font-weight: 700 !important;
-	background-color: var(--blue);
-	background: linear-gradient(45deg, var(--blue) 0%, var(--purple) 100%);
+	color: var(--blue);
 	background-size: 100%;
 	background-repeat: repeat;
 	background-clip: text;
