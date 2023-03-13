@@ -1,11 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
 $white: #fff;
 $black: #080223;
 $blue: #4778bf;
 $grey: #999;
+
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url('../assets/fonts/Outfit-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit Regular';
+    src: url('../assets/fonts/Outfit-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body {
 	background-color: $black;
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Outfit Regular', sans-serif;
 	color: $white;
 	font-weight: 400;
 }
@@ -16,7 +33,7 @@ body {
 		min-height: 100vh;
 		background-position: left;
 	}
-	background-image: url('bg.webp');
+	background-image: url('../assets/images/bg.webp');
 	background-size: cover;
 	@media(min-width:992px) {
 		position: fixed;
@@ -71,7 +88,8 @@ body {
 	background-attachment: fixed;
 }
 h1,h2,h3,h4,h5, h6 {
-	font-weight: 700 !important;
+	font-family: 'Outfit Bold', sans-serif;
+	font-weight: 700;
 	color: $blue;
 	background-size: 100%;
 	background-repeat: repeat;

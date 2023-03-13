@@ -1,7 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap");
+@font-face {
+  font-family: "Outfit Bold";
+  src: url("../assets/fonts/Outfit-Bold.woff2") format("woff2"), url("../assets/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit Regular";
+  src: url("../assets/fonts/Outfit-Regular.woff2") format("woff2"), url("../assets/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   background-color: #080223;
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit Regular", sans-serif;
   color: #fff;
   font-weight: 400;
 }
@@ -9,7 +22,7 @@ body {
 .profile {
   min-height: 70vh;
   background-position: center;
-  background-image: url("bg.webp");
+  background-image: url("../assets/images/bg.webp");
   background-size: cover;
 }
 @media (min-width: 992px) {
@@ -76,7 +89,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700 !important;
+  font-family: "Outfit Bold", sans-serif;
+  font-weight: 700;
   color: #4778bf;
   background-size: 100%;
   background-repeat: repeat;
