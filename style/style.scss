@@ -1,7 +1,7 @@
 $white: #fff;
-$black: #080223;
-$blue: #4778bf;
-$grey: #999;
+$black: #0c022f;
+$blue: #2cd4d9;
+$grey: #9c9c9c;
 
 @font-face {
     font-family: 'Outfit Bold';
@@ -56,6 +56,13 @@ body {
 	h1 {
 		color: $white;
 	}
+	a {
+		color: $white;
+		&:hover,:focus {
+			color: $blue;
+			text-decoration: none;
+		}
+	}
 	.socialmedia {
 		padding-left: 0;
 		list-style-type: none;
@@ -74,10 +81,32 @@ body {
 			}
 		}
 	}
+}
+.information {
 	a {
-		color: $white;
+		color: $blue;
+		text-decoration: none;
+		display: inline-block;
+		padding: 2px 0;
+		  position: relative;
+		&::after {    
+			background: none repeat scroll 0 0 transparent;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			background: $blue;
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		  }
 		&:hover,:focus {
 			color: $blue;
+			&::after {
+				width: 100%; 
+				  left: 0; 
+			}
 		}
 	}
 }

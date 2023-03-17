@@ -13,7 +13,7 @@
   font-display: swap;
 }
 body {
-  background-color: #080223;
+  background-color: #0c022f;
   font-family: "Outfit Regular", sans-serif;
   color: #fff;
   font-weight: 400;
@@ -56,6 +56,13 @@ body {
 .profile h1 {
   color: #fff;
 }
+.profile a {
+  color: #fff;
+}
+.profile a:hover, .profile a :focus {
+  color: #2cd4d9;
+  text-decoration: none;
+}
 .profile .socialmedia {
   padding-left: 0;
   list-style-type: none;
@@ -74,11 +81,32 @@ body {
 .profile .socialmedia li a span {
   display: none;
 }
-.profile a {
-  color: #fff;
+
+.information a {
+  color: #2cd4d9;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 0;
+  position: relative;
 }
-.profile a:hover, .profile a :focus {
-  color: #4778bf;
+.information a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #2cd4d9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.information a:hover, .information a :focus {
+  color: #2cd4d9;
+}
+.information a:hover::after, .information a :focus::after {
+  width: 100%;
+  left: 0;
 }
 
 .photo {
@@ -91,13 +119,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Outfit Bold", sans-serif;
   font-weight: 700;
-  color: #4778bf;
+  color: #2cd4d9;
 }
 
 .tech i {
   padding: 0.75em;
   font-size: 2em;
-  color: #999;
+  color: #9c9c9c;
 }
 
 .projects .accordion-item {
@@ -123,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #fff;
 }
 .projects .accordion-item .accordion-body {
-  background-color: #080223;
+  background-color: #0c022f;
   color: #fff;
 }
 .projects #headingOne {
