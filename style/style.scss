@@ -128,6 +128,23 @@ h1,h2,h3,h4,h5, h6 {
 		color: $grey;
 	}
 }
+.list-group-flush {
+	padding-left: 0;
+
+}
+.list-group-item {
+	background-color: transparent;
+	color: var(--white);
+	.fw-bold {
+		color: $blue;
+	}
+	.badge {
+		&.bg-primary {
+			background-color: $blue !important;
+			color: $black;
+		}
+	}
+}
 .projects {
 	.accordion-item {
 		border: 0;
