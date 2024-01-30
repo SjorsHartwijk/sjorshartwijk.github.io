@@ -1,0 +1,9 @@
+{
+    "name": "Sjors Hartwijk",
+    "short_name": "Sjors",
+    "theme_color": "#0c022f",
+    "background_color": "#0c022f",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }
